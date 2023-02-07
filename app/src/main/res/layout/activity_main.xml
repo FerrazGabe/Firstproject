@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:maxLength="6"
+        android:id="@+id/editText_peso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your weight - Example: 83.00"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/editText_altura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_peso"
+        android:layout_marginTop="18dp"
+        android:hint="Enter your height - Example: 1.73"
+        android:inputType="numberDecimal"
+        android:maxLength="4"
+        android:minHeight="48dp" />
+
+
+    <TextView
+        android:id="@+id/txtMsg"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Body mass index"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/btncalcular"
+        android:text="Calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
